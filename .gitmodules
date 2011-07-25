@@ -16,3 +16,6 @@
 [submodule "resources"]
 	path = resources
 	url = git@gitorious.org:qtmediahub/resources.git
+[submodule "apps"]
+	path = apps
+	url = git@gitorious.org:qtmediahub/apps.git
