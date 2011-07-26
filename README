@@ -7,6 +7,8 @@ Get the ball rolling with:
 git submodule init
 git submodule update
 
+(Also do this every time another submodule is added)
+
 Keep up to date with:
 
 git fetch
