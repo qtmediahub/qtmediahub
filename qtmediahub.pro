@@ -1,5 +1,6 @@
 TEMPLATE = subdirs
-SUBDIRS = qtmediahub-core
+SUBDIRS = qtmediahub-core \
+          apps/demolition/qml-box2d
 
 OTHER_FILES += \
     qtc_packaging/debian_harmattan/rules \
