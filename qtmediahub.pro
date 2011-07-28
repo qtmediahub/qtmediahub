@@ -1,3 +1,6 @@
+include(qtmediahub-core/.cache-cow.pri)
+BASE_NAME=$$PWD/qtmediahub-core
+
 TEMPLATE = subdirs
 SUBDIRS = qtmediahub-core \
           apps/demolition/qml-box2d/box2d.pro
