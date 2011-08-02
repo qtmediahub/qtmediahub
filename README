@@ -9,6 +9,9 @@ git submodule update
 
 (Also do this every time another submodule is added)
 
+Change submodules to master branch:
+git submodule foreach git checkout master
+
 Keep up to date with:
 
 git fetch
