@@ -15,7 +15,8 @@ git submodule update
 Keep up to date with the current known good state:
 
 git fetch
-git rebase origin/HEAD
+git checkout master
+git rebase origin/master
 git submodule update
 
 Please note your branches will be checked out to a certain sha1, and hence

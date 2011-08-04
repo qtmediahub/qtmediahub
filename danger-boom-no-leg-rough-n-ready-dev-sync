@@ -18,8 +18,8 @@ fi
 
 git fetch
 git stash save
-git checkout HEAD
-git rebase origin/HEAD
+git checkout master
+git rebase origin/master
 git submodule foreach git fetch
 git submodule foreach git stash save
 git submodule foreach git checkout master
