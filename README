@@ -2,6 +2,9 @@ This is the unified Qt Media Hub repository.
 
 The core repository and the skins are just git submodules.
 
+All the following commands are run in the toplevel dir, where this document
+resides
+
 Get the ball rolling with:
 
 git submodule init
@@ -9,10 +12,23 @@ git submodule update
 
 (Also do this every time another submodule is added)
 
-Change submodules to master branch:
-git submodule foreach git checkout master
-
-Keep up to date with:
+Keep up to date with the current known good state:
 
 git fetch
+git rebase origin/HEAD
 git submodule update
+
+Please note your branches will be checked out to a certain sha1, and hence
+will be floating.
+
+You can check out any tag (run: git tag for list of tags) and enact it with:
+
+git checkout tagname
+git submodule update
+
+Those wanting to track master on all submodules can use the following
+devastating script at their own risk:
+
+danger-boom-no-leg-rough-n-ready-dev-sync
+
+or roll their own if they are fascist
