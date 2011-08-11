@@ -22,3 +22,6 @@
 [submodule "skins/plattenbau"]
 	path = skins/plattenbau
 	url = git@gitorious.org:qtmediahub/plattenbau.git
+[submodule "skins/flunder"]
+	path = skins/flunder
+	url = git@gitorious.org:qtmediahub/flunder.git
