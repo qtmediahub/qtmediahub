@@ -25,3 +25,6 @@
 [submodule "skins/flunder"]
 	path = skins/flunder
 	url = git@gitorious.org:qtmediahub/flunder.git
+[submodule "meegoremote"]
+	path = meegoremote
+	url = git@gitorious.org:qtmediahub/meegoremote.git
