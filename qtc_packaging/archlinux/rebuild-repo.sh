@@ -10,22 +10,10 @@ do
     then
         echo "package successfully built, add to repo"
         cp *i686.pkg.tar.xz ..
-        repo-add mediatrolls.db.tar.gz *$package*i686.pkg.tar.xz
+        repo-add ../mediatrolls.db.tar.gz *$package*i686.pkg.tar.xz
     else
         echo "package failed"
     fi
     cd ..
 done
-
-#cd delphin
-#makepkg -d -f
-#cd ..
-
-#cd confluence 
-#makepkg -d -f
-#cd ..
-
-#repo-add mediatrolls.db.tar.gz delphin/*i686.pkg.tar.xz
-#repo-add mediatrolls.db.tar.gz confluence/*i686.pkg.tar.xz
-
 
