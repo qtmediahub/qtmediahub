@@ -1,30 +1,30 @@
 [submodule "qtmediahub-core"]
 	path = qtmediahub-core
-	url = git@gitorious.org:qtmediahub/qtmediahub-core.git
+	url = git://gitorious.org/qtmediahub/qtmediahub-core.git
 [submodule "skins/confluence"]
 	path = skins/confluence
-	url = git@gitorious.org:qtmediahub/confluence.git
+	url = git://gitorious.org/qtmediahub/confluence.git
 [submodule "skins/delphin"]
 	path = skins/delphin
-	url = git@gitorious.org:qtmediahub/delphin.git
+	url = git://gitorious.org/qtmediahub/delphin.git
 [submodule "skins/rapid"]
 	path = skins/rapid
-	url = git@gitorious.org:qtmediahub/rapid.git
+	url = git://gitorious.org/qtmediahub/rapid.git
 [submodule "skins/original-remote"]
 	path = skins/original-remote
-	url = git@gitorious.org:qtmediahub/original-remote.git
+	url = git://gitorious.org/qtmediahub/original-remote.git
 [submodule "resources"]
 	path = resources
-	url = git@gitorious.org:qtmediahub/resources.git
+	url = git://gitorious.org/qtmediahub/resources.git
 [submodule "apps"]
 	path = apps
-	url = git@gitorious.org:qtmediahub/apps.git
+	url = git://gitorious.org/qtmediahub/apps.git
 [submodule "skins/plattenbau"]
 	path = skins/plattenbau
-	url = git@gitorious.org:qtmediahub/plattenbau.git
+	url = git://gitorious.org/qtmediahub/plattenbau.git
 [submodule "skins/flunder"]
 	path = skins/flunder
-	url = git@gitorious.org:qtmediahub/flunder.git
+	url = git://gitorious.org/qtmediahub/flunder.git
 [submodule "meegoremote"]
 	path = meegoremote
-	url = git@gitorious.org:qtmediahub/meegoremote.git
+	url = git://gitorious.org/qtmediahub/meegoremote.git
