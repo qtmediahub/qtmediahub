@@ -9,7 +9,6 @@ Get the ball rolling with:
 
 git submodule init
 git submodule update
-
 (Also do this every time another submodule is added)
 
 git submodule foreach git checkout master
@@ -19,6 +18,8 @@ Now you have all the source code in place and are able to build the project:
 qmake
 qmake (you have to run qmake twice, until we have a configure script)
 make
+
+(for more details about Qt version and Qt Mobility, see QT-BUILD-INSTRUCTIONS)
 
 Keep up to date with the current known good state:
 
@@ -40,4 +41,4 @@ devastating script at their own risk:
 
 danger-boom-no-leg-rough-n-ready-dev-sync
 
-or roll their own if they are fascist
+or roll their own
