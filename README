@@ -12,6 +12,8 @@ git submodule update
 
 (Also do this every time another submodule is added)
 
+git submodule foreach git checkout master
+
 Now you have all the source code in place and are able to build the project:
 
 qmake
