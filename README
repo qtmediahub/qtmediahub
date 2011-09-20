@@ -12,6 +12,12 @@ git submodule update
 
 (Also do this every time another submodule is added)
 
+Now you have all the source code in place and are able to build the project:
+
+qmake
+qmake (you have to run qmake twice, until we have a configure script)
+make
+
 Keep up to date with the current known good state:
 
 git fetch
