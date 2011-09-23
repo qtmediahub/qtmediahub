@@ -1,8 +1,10 @@
 #!/bin/sh
-
 set -o errexit
 
-if [ ! -f i-am-a-big-thing ]; then
+scriptPath=$(cd ${0%/*} && pwd -P)
+cd $scriptPath/..
+
+if [ ! -f .disable-warning ]; then
     echo "You are about to be tracking head"
     echo "Make sure you are not about to lose commits on untracked branches"
     echo "Hit c to continue"
