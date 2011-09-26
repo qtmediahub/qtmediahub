@@ -28,3 +28,6 @@
 [submodule "meegoremote"]
 	path = meegoremote
 	url = git://gitorious.org/qtmediahub/meegoremote.git
+[submodule "skins/orca"]
+	path = skins/orca
+	url = git://gitorious.org/qtmediahub/orca.git
