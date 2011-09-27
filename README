@@ -28,6 +28,10 @@ git checkout master
 git rebase origin/master
 git submodule update
 
+git submodule foreach git fetch
+git submodule foreach git checkout master
+git submodule foreach git rebase origin/master
+
 Please note your branches will be checked out to a certain sha1, and hence
 will be floating.
 
