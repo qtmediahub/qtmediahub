@@ -39,6 +39,6 @@ git submodule update
 Those wanting to track master on all submodules can use the following
 devastating script at their own risk:
 
-danger-boom-no-leg-rough-n-ready-dev-sync
+scripts/sync-to-head
 
 or roll their own
