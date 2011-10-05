@@ -18,6 +18,9 @@ if [ "$foo" != "c" ]; then
     exit -1
 fi
 
+git submodule init
+git submodule update
+
 git fetch
 git stash save
 git checkout master
