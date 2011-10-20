@@ -2,8 +2,12 @@ include(qtmediahub-core/.cache-cow.pri)
 BASE_NAME=$$PWD/qtmediahub-core
 
 TEMPLATE = subdirs
-SUBDIRS = qtmediahub-core \
-          apps/demolition/qml-box2d/box2d.pro
+SUBDIRS = qtmediahub-core
+
+!qt5 {
+    SUBDIRS += \
+        apps/demolition/qml-box2d/box2d.pro
+}
 
 OTHER_FILES += \
     qtc_packaging/debian_harmattan/rules \
