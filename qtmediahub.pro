@@ -4,7 +4,7 @@ BASE_NAME=$$PWD/qtmediahub-core
 TEMPLATE = subdirs
 SUBDIRS = qtmediahub-core
 
-!qt5 {
+cache-exists:!qt5 {
     SUBDIRS += \
         apps/demolition/qml-box2d/box2d.pro
 }
