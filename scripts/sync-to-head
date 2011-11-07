@@ -18,13 +18,15 @@ if [ "$foo" != "c" ]; then
     exit -1
 fi
 
-git submodule init
-git submodule update
-
+#make sure git submodule is operating on fresh base
 git fetch
 git stash save
 git checkout master
 git rebase origin/master
+
+git submodule init
+git submodule update
+
 git submodule foreach git fetch
 git submodule foreach git stash save
 git submodule foreach git checkout master
