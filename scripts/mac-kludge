@@ -3,17 +3,19 @@ set -o errexit
 
 scriptPath=$(cd ${0%/*} && pwd -P)
 
-FOO=$scriptPath/../qtmediahub-core
-macdeployqt $FOO/qtmediahub.app
-cp -r $FOO/lib/qtmediahub $FOO/qtmediahub.app/Contents/Resources
-cp -r $FOO/lib/*.dylib $FOO/qtmediahub.app/Contents/Frameworks
-find . -name "*.dylib"  | while read i
+PROJECT_DIR=$scriptPath/../qtmediahub-core
+APP_DIR=$PROJECT_DIR/qtmediahub.app
+macdeployqt $APP_DIR
+cp -r $PROJECT_DIR/lib/qtmediahub $APP_DIR/Contents/Resources
+cp -r $PROJECT_DIR/lib/*.dylib $APP_DIR/Contents/Frameworks
+#restrict damage to package dir!
+find $APP_DIR -name "*.dylib"  | while read i
 do
     install_name_tool $i -change libqmhcore.1.dylib @executable_path/../Frameworks/libqmhcore.1.dylib;
     otool -L $i | grep .\*Qt.\*.framework | awk -F\  '{ print $1 }' | while read j
     do
         echo $j;
-        NEW_LIB_NAME=`echo /opt/dev/qt-5-mac/lib/QtWidgets.framework/Versions/5/QtWidgets | sed -e "s,\(.*\)\(.*Qt.*.framework.*\),@executable_path/../Frameworks/\2,"`
+        NEW_LIB_NAME=`echo $j | sed -e "s,\(.*\)\(.*Qt.*.framework.*\),@executable_path/../Frameworks/\2,"`
         install_name_tool $i -change $j $NEW_LIB_NAME
     done
 done
