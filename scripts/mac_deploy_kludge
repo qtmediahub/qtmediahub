@@ -12,7 +12,7 @@ macdeployqt $APP_DIR
 mkdir -p $CONTENTS_DIR/lib
 
 cp -r $PROJECT_DIR/lib/qtmediahub $CONTENTS_DIR/Resources
-cp -r $PROJECT_DIR/lib/*.dylib $CONTENTS_DIR/lib
+cp -r $PROJECT_DIR/lib/*.dylib $CONTENTS_DIR/Frameworks
 
 #restrict damage to bundle!
 find $APP_DIR -name "*.dylib"  | while read i
