@@ -1,2 +1,0 @@
-#!/bin/bash
-tar cf $1.qar $1 --exclude=.git
