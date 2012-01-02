@@ -33,7 +33,7 @@
 	url = git://gitorious.org/qtmediahub/orca.git
 [submodule "skins/shroomfluence"]
 	path = skins/shroomfluence
-	url = git@gitorious.org:qtmediahub/shroomfluence.git
+	url = git://gitorious.org/qtmediahub/shroomfluence.git
 [submodule "skins/matinee"]
 	path = skins/matinee
 	url = git://gitorious.org/qtmediahub/matinee.git
