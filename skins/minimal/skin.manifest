@@ -1,0 +1,19 @@
+{
+    "name": "Minimal",
+    "version": "0.1",
+
+    "resolutions": {
+        "720p": {
+            "file": "r720/main.qml"
+        }
+    },
+    
+    "default_resolution": "720p",
+
+    "screenshot": "screenshot.png",
+
+    "authors": [
+        { "name": "Donald Carr", "email": "sirspudd@gmail.com" }
+    ]
+}
+
