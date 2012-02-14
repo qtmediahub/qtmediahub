@@ -13,9 +13,6 @@
 [submodule "skins/original-remote"]
 	path = skins/original-remote
 	url = git://gitorious.org/qtmediahub/original-remote.git
-[submodule "resources"]
-	path = resources
-	url = git://gitorious.org/qtmediahub/resources.git
 [submodule "apps"]
 	path = apps
 	url = git://gitorious.org/qtmediahub/apps.git
