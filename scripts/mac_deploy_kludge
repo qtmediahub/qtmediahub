@@ -7,9 +7,13 @@ PROJECT_DIR=$scriptPath/../qtmediahub-core
 APP_DIR=$PROJECT_DIR/qtmediahub.app
 CONTENTS_DIR=$PROJECT_DIR/qtmediahub.app/Contents
 
+rm -Rf $APP_DIR
+make
+
 macdeployqt $APP_DIR
 
 mkdir -p $CONTENTS_DIR/lib
+mkdir -p $CONTENTS_DIR/Frameworks
 
 cp -r $PROJECT_DIR/lib/qtmediahub $CONTENTS_DIR/Resources
 cp -r $PROJECT_DIR/lib/*.dylib $CONTENTS_DIR/Frameworks
