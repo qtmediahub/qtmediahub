@@ -16,12 +16,6 @@
 [submodule "apps"]
 	path = apps
 	url = git://gitorious.org/qtmediahub/apps.git
-[submodule "skins/plattenbau"]
-	path = skins/plattenbau
-	url = git://gitorious.org/qtmediahub/plattenbau.git
-[submodule "skins/flunder"]
-	path = skins/flunder
-	url = git://gitorious.org/qtmediahub/flunder.git
 [submodule "meegoremote"]
 	path = meegoremote
 	url = git://gitorious.org/qtmediahub/meegoremote.git
